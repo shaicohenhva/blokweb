@@ -36,15 +36,15 @@ Surface plane
 <summary>uitwerken voor kick-off werkgroep</summary>
 
 ### Je opdracht:
-https://www.andc.tv/
+https://www.wearenoodz.com/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 homepagina  
-<img src="images/ss-homepage.jpg" width="375px" alt="De website van andC is heel breed, hun homepage dus ook, je kunt heel lang blijven scrolllen. Op de homepage van andC zie je verschillende artikelen uitgelicht, hier kunt je doorheen swipen. Daaronder zie je de nieuwste artikelen, daaronder wordt er aandacht besteed aan de nieuwsbrief en een advertentie. Onder de nieuwsbrief zie je vervolgens weer een lijst met meest gelezen artikelen en daarna een opvallende call to action om abbonee te worden.">
+<img src="images/noodz.jpg" width="375px" alt="De website van We are Noodz is  een one page single website. De website gaat  over eerlijke mondverzorging, al zou je dat niet gelijk denken als je de website ziet. Ik heb namelijk voor deze website gekozen, omdat ik het vette designs vindt hebben en ze verschillende soorten animaties/graphics gebruiken waardoor het visueel vermakelijke en aantrekkelijk is. ">
 
 #### Screenshot(s) van de tweede pagina (small screen):
-Artikel "op je luie gat"  
-<img src="images/ss-artikelzitten.jpg" width="375px" alt="We komen op dit artikel door een uitlichting op de homepage. Het artikel begint met de titel en onder welke topic dit artikel valt en wordt ingeleid met een aantrekkelijke foto en korte inleiding. Daaronder zie je de socialmedia buttons. Vervolgens begint het echte artikel en zie j door  wie het beeld is gemaakt wanneer het artikel geplaatst is. Tussen het artikel door zie je af en toe een bewegende advertentie  of link naar 'lees ook' artikelen. na het artikel wordte er nog  reclame gemaakt voor kleding en komt er  een hele reeks aan call to action buttons voor het  promoten van het tijdschrift.">
+Join us pagina
+<img src="images/noodz2.jpg" width="375px" alt="Omdat Noodz een one pager is, zijn er geen verschillende pagina's. Wel verschillende soorten content waardoor er genoeg variatie en creativiteit in kan. Voor de tweede pagina ga ik dus de Join Us pagina na maken. Eigenlijk is het een popup, maar in overleg met Robert mocht ik dit aanschouwen als pagina. Hier kun je via een formulier jezelf aanmelden voor de eerste lancering. ">
  
 </details>
 
