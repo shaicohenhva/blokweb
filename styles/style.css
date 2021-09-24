@@ -1,5 +1,331 @@
 /* CSS Document */
+
+/********************/
+/* FONT IMPORTEREN */
+/********************/
+@font-face{
+  src: url(../fonts/Boring-Sans-B-Light-trial.ttf);
+  font-family: 'boring';
+} /* bron:  https://www.youtube.com/watch?v=Hwq_Mr12bcI&ab_channel=DaniKrossing*/
+
+/********************/
+/* ALGEMENE STYLING */
+/********************/
 *, *::after, *::before {
   box-sizing:border-box;  
+  margin: 0;
+  padding: 0;
 }
 
+h1{
+  font-family: 'boring';
+  text-transform: uppercase;
+  color: #E1FD2C;
+  font-size: 4.5em;
+  text-align: center;
+  margin-left: 0.5em;
+  margin-right: 0.5em;
+  padding-top: 2em;
+  font-weight: normal;
+}
+
+h2{
+  font-family: Helvetica, sans-serif;
+  font-weight: normal;
+  font-size: 1.5em;
+  color: #E1FD2C;
+  text-align: center;
+  /* margin-left: 1em;
+  margin-right: 1em;
+  margin-top: 1em;
+  margin-bottom: 1em; */
+  margin: 1em;
+}
+
+h3{
+  font-family: 'boring';
+  text-transform: uppercase;
+  color: #502479;
+  font-size: 3em;
+  padding: 0.5em
+}
+
+p{
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  color: #502479;
+  line-height: 2em;
+  /* margin-left: 2em;
+  margin-right: 2em; */
+  margin: 1.5em;
+}
+
+button{
+  display: flex;
+  margin: 0 auto;
+  background-color: #F6A0A9;
+  padding: 1.5em;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #502479;
+  margin-bottom: 2em;
+  
+}
+
+button a{
+  font-family: Helvetica, sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #502479;
+  text-decoration: none;
+  font-size: 1.7em;
+}
+
+/********************/
+/* STYLING HEADER */
+/********************/
+header{
+  position: fixed;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 2px;
+  color: #E1FD2C;
+  width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+header img {
+  padding-left: 1em;
+}
+
+/********************/
+/* STYLING HOME SECTION */
+/********************/
+.homesection{
+  background-color: #16774A;
+  padding-bottom: 1em;
+}
+
+.rozepil1{
+  width: 4em;
+}
+
+.rozepil2{
+  width: 3em;
+}
+
+.rozepil3{
+  width: 3em;
+}
+
+/********************/
+/* STYLING ARTICLE SECTION */
+/********************/
+
+.articlesection{
+  background-color: #F6A0A9;
+  padding-bottom: 1em;
+}
+
+.articlesection .people{
+  width: 25em;
+  margin-left: -9em;
+}
+
+.blauwepil1{
+  width: 6em;
+}
+
+.blauwepil2{
+  width: 5em;
+}
+
+.blauwepil3{
+  width: 4em;
+}
+
+/* article styling */
+.articlesection h2{
+  text-align: start;
+  color: #502479;
+  font-weight: 600;
+  line-height: 1.5em;
+}
+
+/* Button
+.articlesection div{
+  display: flex;
+  justify-content: center;
+  padding: 1em;
+} */
+
+.articlesection button{
+  background-color: #E1FD2C;
+}
+
+/********************/
+/* STYLING VIDEO SECTION */
+/********************/
+.videosection img{
+  width: 100%;
+}
+
+/********************/
+/* STYLING FAQ SECTION */
+/********************/
+.faqsection{
+  background-color: #E1FD2C;
+  padding-top: 1em;
+}
+
+.faqsection h2{
+  font-family: 'boring';
+  text-transform: uppercase;
+  font-size: 6em;
+  font-weight: normal;
+  text-shadow: 1px  0 0 #502479, 0 1px 0 #502479, -1px 0 0 #502479, 0  -1px 0 #502479;
+  /* ^bron: https://dev.to/codingdudecom/everything-about-stroke-text-in-css-561i */
+  margin: 0;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color:  #502479;
+  width: 100%;
+  text-align: start;
+}
+
+.faqsection li{
+  font-family: Helvetica, sans-serif;
+  font-size: 2em;
+  margin: 0.7em;
+  color: #502479;
+  list-style-type: none;
+}
+
+.faqsection div{
+  background-color: #502479;
+  padding: 1em;
+  border: solid;
+  border-width: 2px;
+  border-color: #E1FD2C;
+}
+
+.faqsection div .banner{
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: #E1FD2C;
+  font-size: 1.7em;
+}
+
+/********************/
+/* STYLING INSTA SECTION */
+/********************/
+.instasection{
+  background-color: #BBD4D0;
+  padding-top: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.instasection a{
+  text-decoration: none;
+}
+
+.instasection div{
+  position: relative;
+  background-color: #E1FD2C;
+  width: 30vh;
+  height: 30vh;
+  border: solid;
+  border-width: 2px;
+  border-color: #502479;
+  margin: 1em;
+  display: flex;
+  align-items: center;
+}
+
+.instasection div h2{
+  position: absolute;
+  color: #502479;
+  font-family: 'boring';
+  text-transform: uppercase;
+  font-size: 4.5em;
+  text-align: center;
+  font-weight: normal;
+  border-top: solid;
+  border-bottom: solid;
+  border-width: 2px;
+  border-color:  #502479;
+  width: 100%;
+  margin: 0;
+  
+}
+
+.instasection .instaTag{
+  width: 30vh;
+  height: 5vh;
+}
+
+.instasection img{
+  width: 3em;
+  position: absolute;
+}
+
+.instasection .smiley{
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+/********************/
+/* STYLING FOOTER */
+/********************/
+footer{
+  background-color: #502479;
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+footer h3{
+  color: #E1FD2C;
+  font-size: 2.5em;
+  margin: 0.7em;
+  font-weight: normal;
+  padding: 0;
+}
+
+
+footer p{
+  color: #E1FD2C;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+  margin-bottom: 0.7em;
+}
+
+footer img{
+  width: 80%;
+  display: flex;
+  margin: 2.5em auto;
+}
+
+footer div{
+  background-color: #E1FD2C;
+}
+
+footer div p{
+  color: #502479;
+  font-size: 1.2em;
+
+}
+
+footer a{
+  color: #E1FD2C;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  margin: 2.5em;
+  display: flex;
+}
