@@ -183,6 +183,14 @@ Hier een omschrijving van hoe het opgelost kan worden (met indien nodig een afbe
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
+Usability test:
+hemianopia: Alles is duidelijk te zien, weinig verschil met wanneer je geen bril op hebt. 
+
+Glaucoma/RP:
+
+Hemifield loss:
+
+Alles is prima te lezen, maar de header valt weg bij de gele achtergrond
 
 ### Agenda voor meeting
 samen met je groepje opstellen

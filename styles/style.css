@@ -93,30 +93,80 @@ header{
   width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
+  z-index: 10;
+  display: flex;
 }
 
 header img {
   padding-left: 1em;
+  padding-right: 1em;
+}
+
+header div{
+  background-color: #E1FD2C;
+  overflow: hidden;
+  width: 40vw;
+  height: 2.7em;
+  position: relative;
+  right: 0;
+}
+
+header div p{
+  color: #16774A;
+  font-size: 1.2em;
+  animation : slide 5s linear infinite;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0.8;
+  margin: 0;
+}
+
+@keyframes slide {
+  0% {
+    transform: translatex(100%)
+  }
+
+  100% {
+    transform: translatex(0%)
+  }
 }
 
 /********************/
-/* STYLING HOME SECTION */
+/* STYLING INTRODUCTIE CLASS */
 /********************/
-.homesection{
+.introductieclass{
   background-color: #16774A;
   padding-bottom: 1em;
+  right: 5;
 }
 
-.rozepil1{
+.rozepillen{
+  position: relative;
+}
+
+.rozepillen img:nth-of-type(1){
   width: 4em;
+  position: absolute;
+  right: 5em;
+  top: -15em;
+  transform: rotate(-80deg);
 }
 
-.rozepil2{
-  width: 3em;
+.rozepillen img:nth-of-type(2){
+  width: 3.5em;
+  position: absolute;
+  right: 2em;
+  top: -6em;
 }
 
-.rozepil3{
-  width: 3em;
+.rozepillen img:nth-of-type(3){
+  width: 3.5em;
+  position: absolute;
+  left: 1.5em;
+  top: -8em;
+  transform: rotate(-40deg);
 }
 
 /********************/
@@ -128,21 +178,40 @@ header img {
   padding-bottom: 1em;
 }
 
+.articlesection h3{
+  white-space: nowrap;
+}
+
 .articlesection .people{
   width: 25em;
   margin-left: -9em;
 }
 
-.blauwepil1{
+.blauwepillen{
+  position: relative;
+}
+
+.blauwepillen img:nth-of-type(1){
   width: 6em;
+  position: absolute;
+  left: 8em;
+  top: -18em;
 }
 
-.blauwepil2{
-  width: 5em;
+.blauwepillen img:nth-of-type(2){
+  width: 4.5em;
+  position: absolute;
+  left: -1.5em;
+  top: -17em;
+  transform: rotate(50deg);
 }
 
-.blauwepil3{
+.blauwepillen img:nth-of-type(3){
   width: 4em;
+  position: absolute;
+  left: 4em;
+  top: -3.5em;
+  transform: rotate(-30deg);
 }
 
 /* article styling */
@@ -153,33 +222,26 @@ header img {
   line-height: 1.5em;
 }
 
-/* Button
-.articlesection div{
-  display: flex;
-  justify-content: center;
-  padding: 1em;
-} */
-
 .articlesection button{
   background-color: #E1FD2C;
 }
 
 /********************/
-/* STYLING VIDEO SECTION */
+/* STYLING ABOUT VIDEO CLASS */
 /********************/
-.videosection img{
+.aboutvideoclass iframe{
   width: 100%;
+  background-color: #F6A0A9;
 }
 
 /********************/
-/* STYLING FAQ SECTION */
+/* STYLING FAQ CLASS */
 /********************/
-.faqsection{
+.faqclass{
   background-color: #E1FD2C;
-  padding-top: 1em;
 }
 
-.faqsection h2{
+.faqclass h2{
   font-family: 'boring';
   text-transform: uppercase;
   font-size: 6em;
@@ -193,35 +255,78 @@ header img {
   border-color:  #502479;
   width: 100%;
   text-align: start;
+  padding-top: 0.2em;
 }
 
-.faqsection li{
+.faqclass li h3{
   font-family: Helvetica, sans-serif;
   font-size: 2em;
+  font-weight: normal;
+  text-transform: none;
   margin: 0.7em;
   color: #502479;
   list-style-type: none;
 }
 
-.faqsection div{
+.faqclass li{
+  position: relative;
+}
+
+span {
+  content: "\002B";
+  color: #502479;
+  position: absolute;
+  left: 2;
+  width: 2px;
+  font-size: 2em;
+}
+/* ^ bron: https://www.toptal.com/designers/htmlarrows/math/plus-sign/ */
+
+
+hr{
+  border: 0.5px solid #502479;
+}
+
+.faqclass div{
   background-color: #502479;
   padding: 1em;
   border: solid;
   border-width: 2px;
   border-color: #E1FD2C;
+  overflow: hidden;
 }
 
-.faqsection div .banner{
+.faqclass div h2{
   font-family: Helvetica, sans-serif;
   text-transform: uppercase;
   color: #E1FD2C;
   font-size: 1.7em;
+  animation : slide 7s linear infinite;
+  white-space: nowrap;
+}
+
+.faqclass div:nth-of-type(1){
+  transform: rotate(10deg);
+}
+
+.faqclass div:nth-of-type(2){
+  transform: rotate(-10deg);
+}
+
+@keyframes slide {
+  0% {
+    transform: translatex(0%)
+  }
+
+  100% {
+    transform: translatex(100%)
+  }
 }
 
 /********************/
-/* STYLING INSTA SECTION */
+/* STYLING SOCIALS CLASS */
 /********************/
-.instasection{
+.socialsclass{
   background-color: #BBD4D0;
   padding-top: 1em;
   display: flex;
@@ -230,11 +335,11 @@ header img {
   position: relative;
 }
 
-.instasection a{
+.socialsclass a{
   text-decoration: none;
 }
 
-.instasection div{
+.socialsclass div{
   position: relative;
   background-color: #E1FD2C;
   width: 30vh;
@@ -247,7 +352,7 @@ header img {
   align-items: center;
 }
 
-.instasection div h2{
+.socialsclass div h2{
   position: absolute;
   color: #502479;
   font-family: 'boring';
@@ -261,24 +366,24 @@ header img {
   border-color:  #502479;
   width: 100%;
   margin: 0;
-  
+  padding-top: 0.2em;
 }
 
-.instasection .instaTag{
+.socialsclass .instaTag{
   width: 30vh;
   height: 5vh;
 }
 
-.instasection img{
+.socialsclass img{
   width: 3em;
   position: absolute;
 }
 
-.instasection .smiley{
+/* .socialsclass .smiley{
   width: 100%;
   position: absolute;
   bottom: 0;
-}
+} */
 
 /********************/
 /* STYLING FOOTER */
@@ -313,13 +418,35 @@ footer img{
 
 footer div{
   background-color: #E1FD2C;
+  overflow: hidden;
+  width: 40vw;
+  height: 2.7em;
+  position: relative;
+  left: 11.5em;
 }
 
 footer div p{
   color: #502479;
   font-size: 1.2em;
-
+  animation : slide 5s linear infinite;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0.8;
+  margin: 0;
 }
+
+@keyframes slide {
+  0% {
+    transform: translatex(100%)
+  }
+
+  100% {
+    transform: translatex(0%)
+  }
+}
+/* ^ bron: https://stackoverflow.com/questions/53632338/what-is-the-equivalent-of-marquee-tag-in-html5 */
 
 footer a{
   color: #E1FD2C;
