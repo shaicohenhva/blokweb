@@ -12,17 +12,41 @@
 	<link rel="icon" type="image/svg+xml" href="images/rozepil.svg">
 </head>
 
-<body>
-    <button>
-        <a href="index.html">x</a>
-    </button>
-
-    <h1>
+<body class="joinUsPage">
+ 
+    <a href="index.html">x</a>
+    
+    <h3>
         We are Noodz. Join us!
-    </h1>
+    </h3>
 
     <p>Binnenkort lanceren we de eerste Noodz: tandpasta die je kunt kauwen. Meer weten of als eerste proberen?</p>
     
+    <!-- Zodra het formulier verzonden wordt, wordt je geleid naar de submitted.html pagina! -->
+    <form action="./submitted.html">
+        
+        <fieldset>
+            <label for="voornaam"></label>
+            <input type="text" id="voornaam" placeholder="voornaam" name="voornaam">
+
+            <label for="achternaam"></label>
+            <input type="text" id="achternaam" placeholder="achternaam" name="achternaam">
+
+            <label for="email"></label>
+            <input type="text" id="email" placeholder="email" name="email">
+
+            <label for="geboortedatum"></label>
+            <input type="number" id="geboortedatum" placeholder="geboortedatum" name="geboortedatum">
+        </fieldset>
+
+        <fieldset>
+            <input type="checkbox" id="privacystatement" name="privacystatement">
+            <label for="privacystatement">Noodz gebruikt mijn gegevens alleen om mij op de hoogte te houden en niet voor andere doeleinden. Daar ga ik mee akkoord! :-)</label>
+        </fieldset>
+
+        <input type="submit" value="meld mij aan">
+    </form>
+
     <script src="scripts/script.js"></script>
 </body>
 	

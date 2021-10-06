@@ -6,7 +6,13 @@
 @font-face{
   src: url(../fonts/Boring-Sans-B-Light-trial.ttf);
   font-family: 'boring';
-} /* bron:  https://www.youtube.com/watch?v=Hwq_Mr12bcI&ab_channel=DaniKrossing*/
+} 
+/* bron:  https://www.youtube.com/watch?v=Hwq_Mr12bcI&ab_channel=DaniKrossing*/
+
+@font-face{
+  src: url(../fonts/Lowvetica-UltraThin.ttf);
+  font-family: 'lowvectica';
+}
 
 /********************/
 /* ALGEMENE STYLING */
@@ -17,10 +23,44 @@
   padding: 0;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+:root{
+  --backgroundGreen: #16774A;
+  --backgroundPink: #F6A0A9;
+  --backgroundYellow: #E1FD2C;
+  --backgroundGrey: #BBD4D0;
+  --backgroundPurple: #502479;
+
+  --defaultColor: #502479;
+  --accentColor: #E1FD2C;
+  --fallbackColor: #16774A;
+
+  --green: #16774A;
+  --yellow:  #E1FD2C;
+  --purple:  #502479;
+  --pink: #F6A0A9;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+  --backgroundGreen: #38444c; 
+  --backgroundPink: #38444c; 
+  --backgroundYellow: #38444c;
+  --backgroundGrey: #38444c;
+  --backgroundPurple: #38444c; 
+  
+  --defaultColor: #ffffff; 
+  --accentColor: #ffffff;
+  --fallbackColor: #ffffff; }
+  }
+
 h1{
   font-family: 'boring';
   text-transform: uppercase;
-  color: #E1FD2C;
+  color: var(--accentColor);
   font-size: 4.5em;
   text-align: center;
   margin-left: 0.5em;
@@ -33,19 +73,15 @@ h2{
   font-family: Helvetica, sans-serif;
   font-weight: normal;
   font-size: 1.5em;
-  color: #E1FD2C;
+  color: var(--accentColor);
   text-align: center;
-  /* margin-left: 1em;
-  margin-right: 1em;
-  margin-top: 1em;
-  margin-bottom: 1em; */
   margin: 1em;
 }
 
 h3{
   font-family: 'boring';
   text-transform: uppercase;
-  color: #502479;
+  color: var(--defaultColor);
   font-size: 3em;
   padding: 0.5em
 }
@@ -53,32 +89,9 @@ h3{
 p{
   font-family: Helvetica, sans-serif;
   font-size: 1em;
-  color: #502479;
+  color: var(--defaultColor);
   line-height: 2em;
-  /* margin-left: 2em;
-  margin-right: 2em; */
   margin: 1.5em;
-}
-
-button{
-  display: flex;
-  margin: 0 auto;
-  background-color: #F6A0A9;
-  padding: 1.5em;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #502479;
-  margin-bottom: 2em;
-  
-}
-
-button a{
-  font-family: Helvetica, sans-serif;
-  font-style: normal;
-  text-transform: uppercase;
-  color: #502479;
-  text-decoration: none;
-  font-size: 1.7em;
 }
 
 /********************/
@@ -86,15 +99,17 @@ button a{
 /********************/
 header{
   position: fixed;
+  top: 0;
   border-top: solid;
   border-bottom: solid;
-  border-width: 2px;
-  color: #E1FD2C;
+  border-width: 1px;
+  color: var(--yellow);
   width: 100%;
   margin-top: 1em;
   margin-bottom: 1em;
   z-index: 10;
   display: flex;
+  justify-content: space-between;
 }
 
 header img {
@@ -102,17 +117,17 @@ header img {
   padding-right: 1em;
 }
 
+/* Styling header animatie */
 header div{
-  background-color: #E1FD2C;
+  background-color: var(--yellow);
   overflow: hidden;
-  width: 40vw;
+  width: 34.5vw;
   height: 2.7em;
   position: relative;
-  right: 0;
 }
 
 header div p{
-  color: #16774A;
+  color: var(--green);
   font-size: 1.2em;
   animation : slide 5s linear infinite;
   white-space: nowrap;
@@ -132,16 +147,21 @@ header div p{
     transform: translatex(0%)
   }
 }
+/* Einde styling header */
 
-/********************/
+/******************************/
 /* STYLING INTRODUCTIE CLASS */
-/********************/
+/******************************/
 .introductieclass{
-  background-color: #16774A;
-  padding-bottom: 1em;
+  background-color: var(--backgroundGreen);
+  padding-bottom: 10em;
   right: 5;
+  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
+/* Styling pillen  */
 .rozepillen{
   position: relative;
 }
@@ -168,20 +188,60 @@ header div p{
   top: -8em;
   transform: rotate(-40deg);
 }
+/* Einde styling pillen */
 
-/********************/
+/* Styling '_keep me updated' button */
+.introductieclass a{
+  background-color: var(--pink);
+  padding: 0.7em;
+  border: solid;
+  border-color: var(--defaultColor);
+  border-width: 2px;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  width: fit-content;
+  margin: auto;
+  margin-top: 1em;
+  margin-bottom: -4em;
+}
+
+/* Styling states */
+.introductieclass a:hover{
+  background-color: var(--accentColor);
+  transition: 0.5s;
+}
+
+.introductieclass a:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accentColor);
+  /* ^bron: https://zellwk.com/blog/style-hover-focus-active-states/ */
+}
+
+.introductieclass a:active{
+  background-color: white;
+  color: var(--fallbackColor);
+  transition: 0.5s;
+}
+/* Einde styling states */
+/* Einde styling '_keep me updated' button */
+
+/***************************/
 /* STYLING ARTICLE SECTION */
-/********************/
+/***************************/
 
 .articlesection{
-  background-color: #F6A0A9;
-  padding-bottom: 1em;
+  background-color: var(--backgroundPink);
+  padding-bottom: 2.5em;
 }
 
 .articlesection h3{
   white-space: nowrap;
+  overflow: hidden;
 }
 
+/* Styling foto & pillen */
 .articlesection .people{
   width: 25em;
   margin-left: -9em;
@@ -213,93 +273,182 @@ header div p{
   top: -3.5em;
   transform: rotate(-30deg);
 }
+/* Einde styling foto & pillen */
 
-/* article styling */
+/* Styling article */
 .articlesection h2{
   text-align: start;
-  color: #502479;
+  color: var(--defaultColor);
   font-weight: 600;
   line-height: 1.5em;
 }
 
-.articlesection button{
-  background-color: #E1FD2C;
+.articlesection p:nth-of-type(2){
+  padding-bottom: 3em;
+}
+/* Einde tyling article */
+
+/* Styling '_keep me updated' button */
+.articlesection a{
+  background-color: var(--accentColor);
+  padding: 0.7em;
+  border: solid;
+  border-color: var(--defaultColor);
+  border-width: 2px;
+  text-decoration: none;
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 1.5em;
+  margin-left: 1em;
 }
 
-/********************/
+/* Styling states */
+.articlesection a:hover{
+  background-color: var(--fallbackColor);
+  color: var(--accentColor);
+  border-color: var(--accentColor);
+  transition: 0.5s;
+}
+
+.articlesection a:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px var(--defaultColor);
+}
+
+.articlesection a:active{
+  background-color: white;
+  color: var(--fallbackColor);
+  border-color: var(--accentColor);
+}
+/* Einde styling states */
+
+/* Einde styling '_keep me updated' button */
+
+/*****************************/
 /* STYLING ABOUT VIDEO CLASS */
-/********************/
+/*****************************/
 .aboutvideoclass iframe{
   width: 100%;
-  background-color: #F6A0A9;
+  background-color: var(--backgroundPink);
 }
 
-/********************/
+/*********************/
 /* STYLING FAQ CLASS */
-/********************/
+/*********************/
 .faqclass{
-  background-color: #E1FD2C;
+  background-color: var(--backgroundYellow);
+  padding-top: 1em;
+  padding-bottom: 8em;
 }
 
-.faqclass h2{
+.faqclass h4{
   font-family: 'boring';
-  text-transform: uppercase;
+  color: var(--accentColor);
   font-size: 6em;
   font-weight: normal;
-  text-shadow: 1px  0 0 #502479, 0 1px 0 #502479, -1px 0 0 #502479, 0  -1px 0 #502479;
-  /* ^bron: https://dev.to/codingdudecom/everything-about-stroke-text-in-css-561i */
-  margin: 0;
-  border-top: solid;
   border-bottom: solid;
-  border-width: 2px;
-  border-color:  #502479;
-  width: 100%;
-  text-align: start;
+  border-top: solid;
+  border-width: 1px;
+  border-color: var(--defaultColor);
   padding-top: 0.2em;
+  text-shadow: 1px 0 0 var(--defaultColor), 0 1px 0 var(--defaultColor), -1px 0 0 var(--defaultColor), 0 -1px  0 var(--defaultColor);
+  /* ^ Bron: https://dev.to/codingdudecom/everything-about-stroke-text-in-css-561i */
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
-.faqclass li h3{
+.faqclass li h5{
   font-family: Helvetica, sans-serif;
   font-size: 2em;
-  font-weight: normal;
+  font-weight: 400;
   text-transform: none;
-  margin: 0.7em;
-  color: #502479;
+  margin: 1em;
+  color: var(--defaultColor);
   list-style-type: none;
+  padding-right: 2em;
 }
 
 .faqclass li{
   position: relative;
 }
 
-span {
-  content: "\002B";
-  color: #502479;
+.faqclass button{
+  border: none;
+  background-color: transparent;
+  font-weight: lighter;
+  color: var(--defaultColor);
+  font-size: 3em;
+  text-align: end;
   position: absolute;
-  left: 2;
-  width: 2px;
-  font-size: 2em;
-}
-/* ^ bron: https://www.toptal.com/designers/htmlarrows/math/plus-sign/ */
-
-
-hr{
-  border: 0.5px solid #502479;
+  right: 0.5em;
+  top: 0;
 }
 
+.faqclass button:hover{
+  background: var(--defaultColor);
+  color: var(--accentColor);
+  transition: 0.5s;
+  border-radius: 1em;
+}
+
+.faqclass button:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px var(--defaultColor);
+  border-radius: 1em;
+}
+
+.faqclass button:active{
+  background-color: white;
+  color: var(--accentColor);
+  transition: 0.5s;
+  border-radius: 1em;
+}
+
+.faqclass hr{
+  height: 0px;
+  border: none;
+  border-top: 1px solid var(--defaultColor);
+  /* ^Bron: https://stackoverflow.com/questions/4151743/how-can-i-change-the-thickness-of-my-hr-tag */
+}
+
+/* Styling voor het dropdown menu & javascript */
+.faqclass .hiddenText{
+  display: none;
+}
+
+.faqclass .itemOne.showTextOne .hiddenText{
+  display: inline-block;
+}
+
+.faqclass .itemTwo.showTextTwo .hiddenText{
+  display: inline-block;
+}
+
+.faqclass .itemThree.showTextThree .hiddenText{
+  display: inline-block;
+}
+
+.faqclass .itemFour.showTextFour .hiddenText{
+  display: inline-block;
+}
+/* Einde styling voor het dropdown menu & javascript */
+
+/* Styling overliggende 'GET INSPIRED' banners */
 .faqclass div{
-  background-color: #502479;
-  padding: 1em;
+  background-color: var(--purple);
+  padding: 0em;
   border: solid;
   border-width: 2px;
-  border-color: #E1FD2C;
+  border-color: var(--accentColor);
   overflow: hidden;
+  position: relative;
+  width: 110vw;
 }
 
 .faqclass div h2{
   font-family: Helvetica, sans-serif;
   text-transform: uppercase;
-  color: #E1FD2C;
+  color: var(--accentColor);
   font-size: 1.7em;
   animation : slide 7s linear infinite;
   white-space: nowrap;
@@ -307,10 +456,19 @@ hr{
 
 .faqclass div:nth-of-type(1){
   transform: rotate(10deg);
+  position: absolute;
+  z-index: 1000;
+  left: -1em;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .faqclass div:nth-of-type(2){
   transform: rotate(-10deg);
+  position: absolute;
+  z-index: 1000;
+  left: -1em;
+  overflow: hidden;
 }
 
 @keyframes slide {
@@ -322,13 +480,14 @@ hr{
     transform: translatex(100%)
   }
 }
+/* Einde styling overliggende 'GET INSPIRED' banners */
 
-/********************/
+/*************************/
 /* STYLING SOCIALS CLASS */
-/********************/
+/*************************/
 .socialsclass{
-  background-color: #BBD4D0;
-  padding-top: 1em;
+  background-color: var(--backgroundGrey);
+  padding-top: 5em;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -339,22 +498,43 @@ hr{
   text-decoration: none;
 }
 
+/* Styling states */
+.socialsclass a:hover{
+  background-color: var(--fallbackColor);
+  color: var(--accentColor);
+  border-color: var(--accentColor);
+  transition: 0.5s;
+}
+
+.socialsclass a:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px var(--defaultColor);
+}
+
+.socialsclass a:active{
+  background-color: white;
+  color: var(--fallbackColor);
+  border-color: var(--accentColor);
+  transition: 0.5s;
+}
+/* Einde styling states */
+
 .socialsclass div{
   position: relative;
-  background-color: #E1FD2C;
+  background-color: var(--yellow);
   width: 30vh;
   height: 30vh;
   border: solid;
   border-width: 2px;
-  border-color: #502479;
+  border-color: var(--purple);
   margin: 1em;
   display: flex;
   align-items: center;
 }
 
-.socialsclass div h2{
+.socialsclass div p{
   position: absolute;
-  color: #502479;
+  color: var(--purple);
   font-family: 'boring';
   text-transform: uppercase;
   font-size: 4.5em;
@@ -362,11 +542,20 @@ hr{
   font-weight: normal;
   border-top: solid;
   border-bottom: solid;
-  border-width: 2px;
-  border-color:  #502479;
+  border-width: 1.5px;
+  border-color:  var(--purple);
   width: 100%;
   margin: 0;
   padding-top: 0.2em;
+}
+
+.socialsclass .socialLink{
+  font-family: Helvetica, sans-serif;
+  font-size: 1em;
+  color: var(--purple);
+  line-height: 2em;
+  margin: 1.5em;
+  border: none;
 }
 
 .socialsclass .instaTag{
@@ -375,27 +564,47 @@ hr{
 }
 
 .socialsclass img{
-  width: 3em;
+  width: 4em;
   position: absolute;
 }
 
-/* .socialsclass .smiley{
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-} */
+.socialsclass h6{
+  font-family: 'boring';
+  text-transform: uppercase;
+  color: var(--fallbackColor);
+  font-size: 3em;
+  margin: 0.7em;
+  font-weight: normal;
+  padding: 0;
+  text-align: center;
+}
+
+.socialsclass .JoinUsButton{
+  font-family: Helvetica, sans-serif;
+  text-transform: uppercase;
+  color: var(--fallbackColor);
+  font-size: 1.5em;
+  border-bottom: solid;
+  border-width: 1px;
+  border-color: var(--fallbackColor);
+  margin-bottom: 3em;
+  text-align: start;
+  width: 65%;
+}
 
 /********************/
 /* STYLING FOOTER */
 /********************/
 footer{
-  background-color: #502479;
+  background-color: var(--purple);
   padding-top: 1em;
   padding-bottom: 1em;
 }
 
-footer h3{
-  color: #E1FD2C;
+footer h6{
+  font-family: 'boring';
+  text-transform: uppercase;
+  color: var(--yellow);
   font-size: 2.5em;
   margin: 0.7em;
   font-weight: normal;
@@ -404,37 +613,43 @@ footer h3{
 
 
 footer p{
-  color: #E1FD2C;
+  color: var(--yellow);
   margin-left: 1.5em;
   margin-right: 1.5em;
   margin-bottom: 0.7em;
 }
 
-footer img{
-  width: 80%;
+footer figure{
   display: flex;
-  margin: 2.5em auto;
+  flex-direction: column;
+
+}
+
+footer figure img{
+  width: 80%;
+  margin: 1em auto;
 }
 
 footer div{
-  background-color: #E1FD2C;
+  background-color: var(--yellow);
   overflow: hidden;
   width: 40vw;
   height: 2.7em;
-  position: relative;
-  left: 11.5em;
+  align-self: flex-end;
+  margin-right: 2.3em;
 }
 
 footer div p{
-  color: #502479;
+  color: var(--purple);
   font-size: 1.2em;
-  animation : slide 5s linear infinite;
+  animation : slide 10s linear infinite;
   white-space: nowrap;
   position: absolute;
   left: 0;
   right: 0;
   top: 0.8;
   margin: 0;
+  overflow: hidden;
 }
 
 @keyframes slide {
@@ -449,10 +664,119 @@ footer div p{
 /* ^ bron: https://stackoverflow.com/questions/53632338/what-is-the-equivalent-of-marquee-tag-in-html5 */
 
 footer a{
-  color: #E1FD2C;
+  color: var(--yellow);
   text-decoration: none;
   font-family: Helvetica, sans-serif;
   font-size: 1em;
   margin: 2.5em;
   display: flex;
 }
+
+footer a:hover{
+  background-color: var(--accentColor);
+  color: var(--defaultColor);
+  padding: 0.2em;
+  transition: 0.5s;
+}
+
+footer a:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px var(--accentColor);
+  padding: 0.2em;
+}
+
+footer a:active{
+  background-color: white;
+  color: var(--fallbackColor);
+  border-color: var(--fallbackColor);
+  transition: 0.5s;
+}
+
+/********************/
+/* STYLING JOIN US PAGE */
+/********************/
+
+.joinUsPage{
+  background-color: var(--pink);
+  position: relative;
+}
+
+.joinUsPage a{
+  background-color: var(--yellow);
+  font-size: 3em;
+  text-decoration: none;
+  font-family: 'boring';
+  font-weight: lighter;
+  border: solid;
+  border-color: var(--purple);
+  border-width: 1px;
+  padding: 0.3em;
+  border-radius: 50%;
+  right: 0;
+  left: 20em;
+  top: 0.5em;
+  margin-right: 0.5em;
+  position: sticky;
+}
+
+.joinUsPage h3{
+  font-size: 4em;
+  font-weight: normal;
+  padding-top: 1em;
+}
+
+.joinUsPage p{
+  font-size: 1.2em;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+fieldset{
+  border: solid;
+  border-color: var(--purple);
+  border-width: 2px;
+  border-radius: 1em;
+}
+
+input{
+  border: none;
+  border-bottom: solid;
+  border-color: var(--purple);
+  width: 100%;
+  padding: 1em;
+  background-color: var(--pink);
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2em;
+}
+
+input[type="submit"] {
+  background-color: var(--yellow);
+  color: var(--purple);
+  border: solid;
+  border-color: var(--purple);
+  border-width: 2px;
+  text-transform: uppercase;
+  width: fit-content;
+  margin-top: 1.5em;
+}
+
+form fieldset:nth-of-type(2) {
+  display: flex;
+  border: none;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.2em;
+  color: var(--purple);
+  margin-top: 1.5em;
+  margin-left: -1.8em;
+}
+
+/* form fieldset:nth-of-type(2) input[type="checkbox"]{
+  background-color: #F6A0A9;
+} */
