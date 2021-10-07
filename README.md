@@ -148,7 +148,7 @@ ik heb deze week een enorme sprong gemaakt met mijn  website. Het ziet er langza
 
 Wel merk ik dat ik veel moeite heb met javascript. Ik heb vorig jaar het vak inleiding programmeren goed afgerond, alleen merk  dat ik toch wel veel ben vergeten. Ik merk dat ik het heel frustrerend vind als ik denk dat iets werkt en dat het dan niet lukt.. Eindstand kom je er ook achter dat het dan om een klein foutje zoals een typfoutje komt, en dan ben je redelijk wat tijd verloren daardoor.  
 
-Voor  de rest heb ik tijdens de voortgangsgesprekken goede feedback gekregen en werd er gezegd dat ik goed op schema zit. Dit is dan wel weer motiverend gelukkig! Komende week ga ik weer volle bak aan javascript en de laatste puntjes op de i en dan ben ik klaar voor de beoordeling. 
+Voor  de rest heb ik tijdens de voortgangsgesprekken goede feedback gekregen en werd er gezegd dat ik goed op schema zit. Dit is dan wel weer motiverend gelukkig! Komende week ga ik weer volle bak aan javascript en de laatste puntjes op de i en dan ben ik klaar voor de beoordeling.
 
 
 </details>
@@ -160,11 +160,11 @@ Voor  de rest heb ik tijdens de voortgangsgesprekken goede feedback gekregen en 
 <summary>uitwerken voor eindgesprek</summary>
 
 ### Stand van zaken
-hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+Afgelopen week heb ik bijna iedere dag aan FED gezeten om de laatste puntjes op de I te zetten. Ik kreeg ineens een paar vervelende bugs die  ik niet zelf kon oplossen. De header bleef bijvoorbeeld niet fixed staan.. ook kwam ik er niet uit met javascript. Gelukkig ben ik goed geholpen door Robbert en was de bug zelfs voor hem  redelijk lastig. Met javascript moet ik gewoon beter op spelling letten.. Het idee was namelijk goed, dat zie je ook in de console.. Maar als je in css verkeerde namen gebruikt, werkt het helaas niet.. De website is voor mijn gevoel goed afgerond, maar ik had graag nog meer vette dingen willen doen, zoals meer annimaties en dat de header van kleur veranderd... wegens tijdstekort lukte me dat allemaal niet meer. Ik wil misschien zelf nog deze dingen toevoegen en voor een herkansing gaan. 
 
 ### Screenshot(s)
 
-hier screenshot(s) van je eindresultaat
+<img src="images/eindontwerp.png" width="375px" alt="eindresultaat website">
 
 </details>
 
@@ -179,8 +179,12 @@ hier screenshot(s) van je eindresultaat
 
 Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-1. bron 1
-2. bron 2
-3. ...
+1. https://www.youtube.com/watch?v=OOy764mDtiA&ab_channel=DaniKrossing
+2. https://www.youtube.com/watch?v=Hwq_Mr12bcI&ab_channel=DaniKrossing*/
+3. https://zellwk.com/blog/style-hover-focus-active-states/
+4. https://dev.to/codingdudecom/everything-about-stroke-text-in-css-561i
+5. https://stackoverflow.com/questions/4151743/how-can-i-change-the-thickness-of-my-hr-tag
+6. https://stackoverflow.com/questions/53632338/what-is-the-equivalent-of-marquee-tag-in-html5
+
 
 </details>

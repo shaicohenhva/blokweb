@@ -7,7 +7,7 @@
   src: url(../fonts/Boring-Sans-B-Light-trial.ttf);
   font-family: 'boring';
 } 
-/* bron:  https://www.youtube.com/watch?v=Hwq_Mr12bcI&ab_channel=DaniKrossing*/
+/* bron 2:  https://www.youtube.com/watch?v=Hwq_Mr12bcI&ab_channel=DaniKrossing*/
 
 @font-face{
   src: url(../fonts/Lowvetica-UltraThin.ttf);
@@ -215,7 +215,7 @@ header div p{
 .introductieclass a:focus{
   outline: none;
   box-shadow: 0 0 0 3px var(--accentColor);
-  /* ^bron: https://zellwk.com/blog/style-hover-focus-active-states/ */
+  /* ^Bron 3: https://zellwk.com/blog/style-hover-focus-active-states/ */
 }
 
 .introductieclass a:active{
@@ -354,7 +354,7 @@ header div p{
   border-color: var(--defaultColor);
   padding-top: 0.2em;
   text-shadow: 1px 0 0 var(--defaultColor), 0 1px 0 var(--defaultColor), -1px 0 0 var(--defaultColor), 0 -1px  0 var(--defaultColor);
-  /* ^ Bron: https://dev.to/codingdudecom/everything-about-stroke-text-in-css-561i */
+  /* ^ Bron 4: https://dev.to/codingdudecom/everything-about-stroke-text-in-css-561i */
   margin-top: 0.5em;
   margin-bottom: 0.5em;
 }
@@ -413,7 +413,7 @@ header div p{
   height: 0px;
   border: none;
   border-top: 1px solid var(--defaultColor);
-  /* ^Bron: https://stackoverflow.com/questions/4151743/how-can-i-change-the-thickness-of-my-hr-tag */
+  /* ^Bron 5: https://stackoverflow.com/questions/4151743/how-can-i-change-the-thickness-of-my-hr-tag */
 }
 
 /* Styling voor het dropdown menu & javascript */
@@ -698,7 +698,6 @@ footer div p{
   position: absolute;
   left: 0;
   right: 0;
-  top: 0.8;
   margin: 0;
   overflow: hidden;
 }
@@ -712,7 +711,7 @@ footer div p{
     transform: translatex(0%)
   }
 }
-/* ^ bron: https://stackoverflow.com/questions/53632338/what-is-the-equivalent-of-marquee-tag-in-html5 */
+/* ^ bron 6: https://stackoverflow.com/questions/53632338/what-is-the-equivalent-of-marquee-tag-in-html5 */
 
 footer a{
   color: var(--yellow);
@@ -851,7 +850,4 @@ form fieldset:nth-of-type(2) {
   margin-top: 1.5em;
   margin-left: -1.8em;
 }
-
-/* form fieldset:nth-of-type(2) input[type="checkbox"]{
-  background-color: #F6A0A9;
-} */
+/* Einde formulier */
