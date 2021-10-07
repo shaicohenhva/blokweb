@@ -230,18 +230,18 @@ header div p{
 /* STYLING ARTICLE SECTION */
 /***************************/
 
-.articlesection{
+.articleclass{
   background-color: var(--backgroundPink);
   padding-bottom: 2.5em;
 }
 
-.articlesection h3{
+.articleclass h3{
   white-space: nowrap;
   overflow: hidden;
 }
 
 /* Styling foto & pillen */
-.articlesection .people{
+.articleclass .people{
   width: 25em;
   margin-left: -9em;
 }
@@ -275,20 +275,20 @@ header div p{
 /* Einde styling foto & pillen */
 
 /* Styling article */
-.articlesection h2{
+.articleclass h2{
   text-align: start;
   color: var(--defaultColor);
   font-weight: 600;
   line-height: 1.5em;
 }
 
-.articlesection p:nth-of-type(2){
+.articleclass p:nth-of-type(2){
   padding-bottom: 3em;
 }
 /* Einde tyling article */
 
 /* Styling '_keep me updated' button */
-.articlesection a{
+.articleclass a{
   background-color: var(--accentColor);
   padding: 0.7em;
   border: solid;
@@ -302,19 +302,19 @@ header div p{
 }
 
 /* Styling states */
-.articlesection a:hover{
+.articleclass a:hover{
   background-color: var(--fallbackColor);
   color: var(--accentColor);
   border-color: var(--accentColor);
   transition: 0.5s;
 }
 
-.articlesection a:focus{
+.articleclass a:focus{
   outline: none;
   box-shadow: 0 0 0 3px var(--defaultColor);
 }
 
-.articlesection a:active{
+.articleclass a:active{
   background-color: white;
   color: var(--fallbackColor);
   border-color: var(--accentColor);
@@ -326,9 +326,12 @@ header div p{
 /*****************************/
 /* STYLING ABOUT VIDEO CLASS */
 /*****************************/
-.aboutvideoclass iframe{
-  width: 100%;
-  background-color: var(--backgroundPink);
+.aboutvideoclass{
+  background-color: var(--backgroundYellow);
+}
+
+.aboutvideoclass video{
+  width: 100vw;
 }
 
 /*********************/
@@ -356,6 +359,7 @@ header div p{
   margin-bottom: 0.5em;
 }
 
+/* Styling ul */
 .faqclass li h5{
   font-family: Helvetica, sans-serif;
   font-size: 2em;
@@ -383,6 +387,7 @@ header div p{
   top: 0;
 }
 
+/* Styling button states */
 .faqclass button:hover{
   background: var(--defaultColor);
   color: var(--accentColor);
@@ -402,6 +407,7 @@ header div p{
   transition: 0.5s;
   border-radius: 1em;
 }
+/* Einde styling button states */
 
 .faqclass hr{
   height: 0px;
@@ -431,6 +437,7 @@ header div p{
   display: inline-block;
 }
 /* Einde styling voor het dropdown menu & javascript */
+/* Einde ul */
 
 /* Styling overliggende 'GET INSPIRED' banners */
 .faqclass div{
@@ -470,6 +477,7 @@ header div p{
   overflow: hidden;
 }
 
+/* Animatie */
 @keyframes slide {
   0% {
     transform: translatex(0%)
@@ -493,6 +501,7 @@ header div p{
   position: relative;
 }
 
+/* Styling social media boxen */
 .socialsclass a{
   text-decoration: none;
 }
@@ -560,6 +569,7 @@ header div p{
   height: 5vh;
 }
 
+/* Styling om de blokken te positioneren */
 .socialsclass a:nth-of-type(1){
   transform: rotate(-10deg);
 }
@@ -571,10 +581,45 @@ header div p{
   bottom: 3em;
 }
 
-.socialsclass img{
-  width: 4em;
+.socialsclass a:nth-of-type(2){
   position: absolute;
+  top: 20em;
+  z-index: 100;
 }
+
+.socialsclass a:nth-of-type(3){
+  transform: rotate(10deg);
+}
+
+.socialsclass a:nth-of-type(3) img{
+  width: 3em;
+  position: absolute;
+  top: 1.3em;
+  right: 1em;
+}
+
+.socialsclass a:nth-of-type(4){
+  transform: rotate(-15deg);
+}
+
+.socialsclass a:nth-of-type(4) img{
+  width: 4.5em;
+  position: absolute;
+  left: 10em;
+  bottom: 2em;
+  z-index: 10;
+}
+
+.socialsclass a:nth-of-type(4) p:nth-of-type(2){
+  position: absolute;
+  bottom: -1em;
+  right: -1em;
+  border: solid;
+  border-width: 1px;
+  width: fit-content;
+}
+/* Einde styling om de blokken te positioneren */
+/* Einde styling social media boxen */
 
 .socialsclass h6{
   font-family: 'boring';
@@ -619,7 +664,6 @@ footer h6{
   padding: 0;
 }
 
-
 footer p{
   color: var(--yellow);
   margin-left: 1.5em;
@@ -630,7 +674,6 @@ footer p{
 footer figure{
   display: flex;
   flex-direction: column;
-
 }
 
 footer figure img{
@@ -680,6 +723,7 @@ footer a{
   display: flex;
 }
 
+/* Styling states */
 footer a:hover{
   background-color: var(--accentColor);
   color: var(--defaultColor);
@@ -699,6 +743,7 @@ footer a:active{
   border-color: var(--fallbackColor);
   transition: 0.5s;
 }
+/* Einde styling states */
 
 /************************/
 /* STYLING JOIN US PAGE */
@@ -707,8 +752,10 @@ footer a:active{
 .joinUsPage{
   background-color: var(--pink);
   position: relative;
+  padding-bottom: 3em;
 }
 
+/* States */
 .joinUsPage a{
   background-color: var(--yellow);
   font-size: 3em;
@@ -726,6 +773,25 @@ footer a:active{
   margin-right: 0.5em;
   position: sticky;
 }
+
+.joinUsPage a:hover{
+  background-color: var(--fallbackColor);
+  color: var(--accentColor);
+  border-color: var(--accentColor);
+  transition: 0.5s;
+}
+
+.joinUsPage a:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px var(--defaultColor);
+}
+
+.joinUsPage a:active{
+  background-color: white;
+  color: var(--fallbackColor);
+  border-color: var(--accentColor);
+}
+/* Einde states */
 
 .joinUsPage h3{
   font-size: 4em;
