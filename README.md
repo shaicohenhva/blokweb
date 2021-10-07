@@ -40,11 +40,11 @@ https://www.wearenoodz.com/
 
 #### Screenshot(s) van de eerste pagina (small screen): 
 homepagina  
-<img src="images/noodz.jpg" width="375px" alt="De website van We are Noodz is  een one page single website. De website gaat  over eerlijke mondverzorging, al zou je dat niet gelijk denken als je de website ziet. Ik heb namelijk voor deze website gekozen, omdat ik het vette designs vindt hebben en ze verschillende soorten animaties/graphics gebruiken waardoor het visueel vermakelijke en aantrekkelijk is. ">
+<img src="images/Noodz.jpg" width="375px" alt="De website van We are Noodz is  een one page single website. De website gaat  over eerlijke mondverzorging, al zou je dat niet gelijk denken als je de website ziet. Ik heb namelijk voor deze website gekozen, omdat ik het vette designs vindt hebben en ze verschillende soorten animaties/graphics gebruiken waardoor het visueel vermakelijke en aantrekkelijk is. ">
 
 #### Screenshot(s) van de tweede pagina (small screen):
 Join us pagina
-<img src="images/noodz2.jpg" width="375px" alt="Omdat Noodz een one pager is, zijn er geen verschillende pagina's. Wel verschillende soorten content waardoor er genoeg variatie en creativiteit in kan. Voor de tweede pagina ga ik dus de Join Us pagina na maken. Eigenlijk is het een popup, maar in overleg met Robert mocht ik dit aanschouwen als pagina. Hier kun je via een formulier jezelf aanmelden voor de eerste lancering. ">
+<img src="images/Noodz2.jpg" width="375px" alt="Omdat Noodz een one pager is, zijn er geen verschillende pagina's. Wel verschillende soorten content waardoor er genoeg variatie en creativiteit in kan. Voor de tweede pagina ga ik dus de Join Us pagina na maken. Eigenlijk is het een popup, maar in overleg met Robert mocht ik dit aanschouwen als pagina. Hier kun je via een formulier jezelf aanmelden voor de eerste lancering. ">
  
 </details>
 
@@ -58,13 +58,10 @@ Join us pagina
 <summary>uitwerken na afloop 2e werkgroep</summary>
 
 ### de hele pagina: 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+<img src="images/breakdownschets1.png" width="375px" alt="breakdown van de hele pagina">
 
 ### dynamisch deel (bijv menu): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
-
-### wellicht nog een dynamisch deel (bijv filter): 
-<img src="images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+<img src="images/breakdownschets2.png" width="375px" alt="breakdown van een dynamisch deel">
 
 </details>
 
@@ -80,24 +77,10 @@ Join us pagina
 ### Stand van zaken
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
-
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+Ik ben deze week begonnen met het schrijven van mijn html. Ik merk dat het wel weer even wennen is, omdat ik het al een tijdje niet heb gedaan. Gelukkig heb ik veel aan de breakdown schets en kom ik daardoor aleen heel eind inde structuur van de html.
 
 
-### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
 
-- punt 1
-- punt 2
-- nog een punt
-- ...
 
 </details>
 
@@ -114,23 +97,6 @@ hier na afloop snel de uitkomsten van de meeting vastleggen
 hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
 
 
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-
-### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
 
 </details>
 
@@ -192,28 +158,8 @@ Hemifield loss:
 
 Alles is prima te lezen, maar de header valt weg bij de gele achtergrond
 
-### Agenda voor meeting
-samen met je groepje opstellen
-
-| student 1      | student 2          | student 3    | student 4        |
-| ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
-
-
-### Verslag van meeting
-hier na afloop snel de uitkomsten van de meeting vastleggen
-
-- punt 1
-- punt 2
-- nog een punt
-- ...
 
 </details>
-
-
-
 
 
 ## Eindgesprek (week 5)

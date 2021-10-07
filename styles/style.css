@@ -134,7 +134,7 @@ header div p{
   position: absolute;
   left: 0;
   right: 0;
-  top: 0.8;
+  top: 0.1em;
   margin: 0;
 }
 
@@ -155,7 +155,6 @@ header div p{
 .introductieclass{
   background-color: var(--backgroundGreen);
   padding-bottom: 10em;
-  right: 5;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -533,7 +532,6 @@ header div p{
 }
 
 .socialsclass div p{
-  position: absolute;
   color: var(--purple);
   font-family: 'boring';
   text-transform: uppercase;
@@ -546,7 +544,6 @@ header div p{
   border-color:  var(--purple);
   width: 100%;
   margin: 0;
-  padding-top: 0.2em;
 }
 
 .socialsclass .socialLink{
@@ -561,6 +558,17 @@ header div p{
 .socialsclass .instaTag{
   width: 30vh;
   height: 5vh;
+}
+
+.socialsclass a:nth-of-type(1){
+  transform: rotate(-10deg);
+}
+
+.socialsclass a:nth-of-type(1) img{
+  width: 5em;
+  position: absolute;
+  left: 3em;
+  bottom: 3em;
 }
 
 .socialsclass img{
@@ -692,9 +700,9 @@ footer a:active{
   transition: 0.5s;
 }
 
-/********************/
+/************************/
 /* STYLING JOIN US PAGE */
-/********************/
+/************************/
 
 .joinUsPage{
   background-color: var(--pink);
@@ -731,6 +739,7 @@ footer a:active{
   margin-right: 1.5em;
 }
 
+/* Styling formulier */
 form{
   display: flex;
   flex-direction: column;
